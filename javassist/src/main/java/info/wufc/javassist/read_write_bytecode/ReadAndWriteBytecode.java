@@ -1,4 +1,4 @@
-package info.wufc._1_rw_bytecode;
+package info.wufc.javassist.read_write_bytecode;
 
 
 import javassist.CannotCompileException;
@@ -8,7 +8,7 @@ import javassist.NotFoundException;
 
 import java.io.IOException;
 
-public class ClassPoolDemo {
+public class ReadAndWriteBytecode {
     public static void main(String[] args) throws NotFoundException, CannotCompileException, IOException {
         // ClassPool javassist用于控制字节码修改， 是一个compile-time class(CtClass)的容器。
         // 底层使用一个hash表，作为缓存，如果不存在则读取class文件
