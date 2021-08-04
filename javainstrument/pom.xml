@@ -16,6 +16,7 @@
         <module>instrument-application</module>
         <module>instrument-attacher</module>
         <module>instrument-agent-javassist</module>
+        <module>instrument-attacher-bytebuddy</module>
     </modules>
 
 

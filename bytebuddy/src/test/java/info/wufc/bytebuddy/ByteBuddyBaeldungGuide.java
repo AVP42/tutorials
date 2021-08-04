@@ -10,6 +10,7 @@ import net.bytebuddy.implementation.MethodDelegation;
 import net.bytebuddy.matcher.ElementMatchers;
 import org.junit.Test;
 
+import java.lang.instrument.Instrumentation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
@@ -49,7 +50,7 @@ public class ByteBuddyBaeldungGuide {
     }
 
     @Test public void RedefiningExistingClass() {
-        ByteBuddyAgent.install();
+        Instrumentation install = ByteBuddyAgent.install();
         new ByteBuddy().redefine(Foo.class).method(ElementMatchers.named("sayHelloFoo"))
             .intercept(FixedValue.value("Hello Foo Redefined")).make()
             .load(Foo.class.getClassLoader(), ClassReloadingStrategy.fromInstalledAgent());

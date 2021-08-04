@@ -9,21 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>instrument-attacher</artifactId>
-    <properties>
-        <sun.tools.version>1.8.0_181</sun.tools.version>
-    </properties>
+    <artifactId>instrument-attacher-bytebuddy</artifactId>
 
     <dependencies>
-        <!--如果使用byte-buddy-agent 就不需要了这个依赖了，这种方式在不同的系统或者不同的jdk中可能找不到-->
+        <!--如果使用byte-buddy-agent 就通过system引入com.sun.tools，这种方式在不同的系统或者不同的jdk中可能找不到-->
         <dependency>
-            <groupId>com.sun</groupId>
-            <artifactId>tools</artifactId>
-            <version>${sun.tools.version}</version>
-            <scope>system</scope>
-            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy-agent</artifactId>
+            <version>1.11.9</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -36,7 +30,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>info.wufc.javainstrument.Loader</mainClass>
+                            <mainClass>info.wufc.javainstrument.ByteBuddyAgentLoader</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -57,5 +51,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
