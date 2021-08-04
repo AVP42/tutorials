@@ -10,6 +10,10 @@ public class Application {
 
         new TimerDemo().doSomething();
 
-        TimeUnit.SECONDS.sleep(10L);
+        TimeUnit.SECONDS.sleep(20L);
+
+        new TimerDemo().doSomething();
+
+        TimeUnit.SECONDS.sleep(2L);
     }
 }

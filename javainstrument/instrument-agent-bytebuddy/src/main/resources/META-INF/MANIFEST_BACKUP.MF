@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Premain-Class: info.wufc.javainstrument.TimerByteBuddyAgent
+Built-By: Administrator
+Agent-Class: info.wufc.javainstrument.TimerByteBuddyAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Can-Set-Native-Method-Prefix: false
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_181
