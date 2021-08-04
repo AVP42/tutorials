@@ -10,6 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>javassist</module>
+        <module>dynamic_proxy</module>
+        <module>grpc</module>
+        <module>bytebuddy</module>
+        <module>javabasic</module>
+        <module>javaspi</module>
+        <module>javainstrument</module>
     </modules>
 
 

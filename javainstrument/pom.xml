@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tutorials</artifactId>
+        <groupId>info.wufc</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>javainstrument</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>instrument-agent-bytebuddy</module>
+        <module>instrument-application</module>
+        <module>instrument-attacher</module>
+        <module>instrument-agent-javassist</module>
+    </modules>
+
+
+</project>

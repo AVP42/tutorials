@@ -1,0 +1,2 @@
+-javaagent:D:\project\self\avp42\tutorials\javainstrument\instrument-agent-bytebuddy\target\instrument-agent-bytebuddy.jar
+-javaagent:D:\project\self\avp42\tutorials\javainstrument\instrument-agent-javassist\target\instrument-agent-javassist.jar
