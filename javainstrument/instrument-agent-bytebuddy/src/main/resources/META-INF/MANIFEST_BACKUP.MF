@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Premain-Class: info.wufc.javainstrument.TimerByteBuddyAgent
+Premain-Class: info.wufc.tutorials.javainstrument.TimerByteBuddyAgent
 Built-By: Administrator
-Agent-Class: info.wufc.javainstrument.TimerByteBuddyAgent
+Agent-Class: info.wufc.tutorials.javainstrument.TimerByteBuddyAgent
 Can-Redefine-Classes: true
 Can-Retransform-Classes: true
 Can-Set-Native-Method-Prefix: false

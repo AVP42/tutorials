@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>javainstrument</artifactId>
-        <groupId>info.wufc</groupId>
+        <groupId>info.wufc.tutorials</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -30,7 +30,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>info.wufc.javainstrument.ByteBuddyAgentLoader</mainClass>
+                            <mainClass>info.wufc.tutorials.javainstrument.ByteBuddyAgentLoader</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
