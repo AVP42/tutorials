@@ -18,6 +18,7 @@
         <module>instrument-agent-javassist</module>
         <module>instrument-attacher-bytebuddy</module>
         <module>instrument-api</module>
+        <module>instrument-agent-bytebuddy2</module>
     </modules>
 
 
