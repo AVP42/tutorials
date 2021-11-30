@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:job="http://www.dangdang.com/schema/ddframe/job"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.dangdang.com/schema/ddframe/job
+                        http://www.dangdang.com/schema/ddframe/job/job.xsd
+                        ">
+
+    <job:simple id="job1"
+                class="info.wufc.elasticjob.lite.spring.jobs.Job1"
+                monitor-execution="true" failover="true" registry-center-ref="regCenter1" cron="1/10 * * * * ? "
+                sharding-total-count="1" sharding-item-parameters="0=A"
+                description="job1"/>
+    <job:simple id="job2"
+                class="info.wufc.elasticjob.lite.spring.jobs.Job2"
+                monitor-execution="true" failover="true" registry-center-ref="regCenter1" cron="1/10 * * * * ? "
+                sharding-total-count="1" sharding-item-parameters="0=A"
+                description="job2"/>
+
+    <job:simple id="job3"
+                class="info.wufc.elasticjob.lite.spring.jobs.Job3"
+                monitor-execution="true" failover="true" registry-center-ref="regCenter2" cron="1/10 * * * * ? "
+                sharding-total-count="1" sharding-item-parameters="0=A"
+                description="job3"/>
+    <job:simple id="job4"
+                class="info.wufc.elasticjob.lite.spring.jobs.Job4"
+                monitor-execution="true" failover="true" registry-center-ref="regCenter2" cron="1/10 * * * * ? "
+                sharding-total-count="1" sharding-item-parameters="0=A"
+                description="job4"/>
+    <job:simple id="job5"
+                class="info.wufc.elasticjob.lite.spring.jobs.Job5"
+                monitor-execution="true" failover="true" registry-center-ref="regCenter2" cron="1/10 * * * * ? "
+                sharding-total-count="1" sharding-item-parameters="0=A"
+                description="job5"/>
+
+
+</beans>

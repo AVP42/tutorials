@@ -9,15 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>javabasic</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.8.2</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <artifactId>elastic-job</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>elastic-job-lite-spring</module>
+        <module>elastic-job-lite-spring-v3</module>
+    </modules>
 
 
 </project>

@@ -1,4 +1,4 @@
-package info.wufc.tutorials.javabasic.overide;
+package info.wufc.tutorials.javabasic.override;
 
 import java.io.IOException;
 

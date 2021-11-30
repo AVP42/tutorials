@@ -57,7 +57,7 @@ public class TimerByteBuddyAgent {
 
         ClassInjector.UsingUnsafe.Factory factory = ClassInjector.UsingUnsafe.Factory.resolve(instrumentation);
         ClassInjector injector = factory.make(loader, null);
-        agentBuilder = agentBuilder.with(new AgentBuilder.InjectionStrategy.UsingUnsafe.OfFactory(factory));
+//        agentBuilder = agentBuilder.with(new AgentBuilder.InjectionStrategy.UsingUnsafe.OfFactory(factory));
 
 
         // 返回的ClassFileTransformer 可以调用reset方法，
