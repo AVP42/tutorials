@@ -21,6 +21,8 @@
         <module>maven</module>
         <module>elastic-job</module>
         <module>scheduler</module>
+        <module>spring-cloud</module>
+        <module>alibaba-jetcache</module>
     </modules>
 
 
